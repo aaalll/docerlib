@@ -9,7 +9,7 @@
 ### Steps to create docker images and running the project in a docker container
 1. Clone repository and open cloned repository
 2. Open folder book in the terminal
-3. Run docker-compose up
+3. Run `docker-compose up`
 4. Verify that all is executed succesfully, just visiting http://localhost:8080/
 5. Open other terminal
 6. Open cloned repository on folder booktest.
