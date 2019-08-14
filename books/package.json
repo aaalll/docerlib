@@ -1,0 +1,44 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "description": "Library",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=development jest --detectOpenHandles --forceExit",
+    "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel src --out-dir dist",
+    "build-map": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "pretest": "eslint . --fix",
+    "prepublishOnly": "npm run build",
+    "prod": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "author": "aaalll",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jest": "^24.8.0",
+    "mongoose": "^5.6.9",
+    "mongoose-sequence": "^5.1.0"
+  }
+}
